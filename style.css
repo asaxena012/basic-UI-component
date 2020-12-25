@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+  height: 100vh;
+  color: #333;
+  line-height: 1.5;
+  position: relative;
+}
+
+.show-modal {
+  cursor: pointer;
+  font-family: sans-serif;
+  color: rgb(71, 71, 71);
+  font-size: 125%;
+  padding: 15px 40px;
+  font-weight: 700;
+  border: none;
+  margin: 50px 20px;
+  white-space: nowrap;
+  border-radius: 40px;
+  background-color: #fff;
+}
+
+/*--------------Modal--------------*/
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2%;
+  width: 70%;
+  z-index: 10;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-modal {
+  position: absolute;
+  top: 5%;
+  left: 93%;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  font-size: 300%;
+}
+
+p {
+  font-size: 110%;
+  padding: 20px;
+}
